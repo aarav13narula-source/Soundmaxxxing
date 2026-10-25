@@ -1,6 +1,6 @@
 # **SOUNDMAXXXING**
 ## *Visualising the music through 3d Mesh styled-sphere!*
-Everyone hears music, but.... this is a whole experience which allows us to *FEEL* the beats. This is my **FIRST EVER PROJECT** *on HackClub*, was really an adventuress journey for me where I learned alot.
+Everyone hears music, but.... this is a whole experience which allows us to *FEEL* the beats. The core concept of the demo is to present a sphere which takes different forms which vary from beat to beat, following algoritms, insteaded of some hard-coded stuff.
 
 ### **The Whole Logic for the Visualizing:**
 - The way we will be going to visualize the beats is through (drumroll....) A SPHERE!!!
@@ -35,7 +35,7 @@ Everyone hears music, but.... this is a whole experience which allows us to *FEE
 </p>
 
 
-### ***File Structure:***
+### ***Role of each File:***
 - index.html:
   + Holding together the main homepage,
   + Handling the main buttons and the workframe involved with that
