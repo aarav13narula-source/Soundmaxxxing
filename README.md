@@ -23,9 +23,20 @@ Everyone hears music, but.... this is a whole experience which allows us to *FEE
 1. Go to *https://soundmaxxxing.vercel.app/*
 2. Click on 'Upload the Audio here'.
 3. You can click on Preview for listening to the audio before starting the main visualization, and then click on Start for the experience to begin!
+
 <img width="1457" height="868" alt="Screenshot 2026-10-25 at 11 38 30 PM" src="https://github.com/user-attachments/assets/16fcf310-46fe-4086-919a-e6632dac53c1" />
+
+
 4.Then, you will be re-directed to a new page where you will see a rotating sphere with a mesh like design
+
+
 <img width="1457" height="868" alt="Screenshot 2026-10-25 at 11 59 52 PM" src="https://github.com/user-attachments/assets/4e8cf55b-aae8-4749-9916-c02ddd3deb27" />
+
+<img width="1457" height="868" alt="Screenshot 2026-10-26 at 12 30 52 AM" src="https://github.com/user-attachments/assets/f520a1d2-59a3-4f70-ab40-2af81f6c2bfe" />
+
+
+
+
 
 5. There, You can see another widget/hero-card on the screen, i.e. the control panel- where we can control the song's duration from where we want to listen from, and also access the volume controls, along with a pause/play button.
 
