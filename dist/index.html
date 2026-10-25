@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Soundmaxxxing</title>
+    <style>body{margin:0}</style>
+    <script type="module" crossorigin src="/assets/index-Bum4L4NY.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-vqMQ4o91.css">
+  </head>
+  <body>
+  
+    <div id= "home-screen">
+      <div class="hero-card">
+      <h1>SOUNDMAXXXING</h1>
+      <p class="tagline">The Bestest Best Bestest Best Audio Visualizer hehe. </p>
+      <button id= "upload-btn" class="upload-btn" type="button">
+        Upload the Audio here
+      </button>
+      <input type="file" id="audio-upload" accept="audio/*" hidden>
+      <p id="file-name"> No File Selected yet gng</p>
+      <div id=" song-preview" class="hidden">
+        <button id="preview-play" type="button" disabled>
+          Play The Beat lil bro
+        </button>
+        <span id="preview-duration">--:--</span>
+      </div>
+      <button id="start-btn" disabled>START</button>
+      
+      </div>
+    </div>
+
+    <div id= "hud" class= "hidden">
+      <section class= "player=panel">
+        <p id= "now-playing">
+          <div class= "player-controls">
+            <button id= "player-play" type="button">Paused</button>
+            <span id= "elapsed">0:00</span>
+
+            <input
+            id="seek"
+            type="range"
+            min="0"
+            max="100"
+            step="0.1"
+            value="0"
+            aria-label="Song position">
+            <span id=""remaining>--:-- left</span>
+            <label>
+              Volume
+              <input
+              id="volume"
+              type="range"
+              min="0"
+              max='1'
+              step="0.01"
+              value="0.8">
+            </label>
+          </div>
+          <p id="bands">Bass 0%, Mids 0%, Treble 0%</p>
+        </p>
+      </section>
+    </div>
+    <audio id="audio-player" preload="metadata"></audio>
+  </body>
+</html>

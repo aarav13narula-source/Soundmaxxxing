@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body { 
+    margin: 0; 
+    overflow: hidden; 
+    background-color: black; color: white; 
+    font-family: Arial, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(346deg, rgba(56, 8, 8, 1) 51%, rgba(224,113,2,1) 100%); }
+canvas {
+    position: fixed;
+    inset:0;
+    z-index: 0;
+}
+
+#home-screen {
+    position: fixed; 
+    inset:0; 
+    z-index: 10;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    transition: opacity 0.6s ease;
+}
+#hud{
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+}
+.hero-card{
+    background: transparent;
+    backdrop-filter: none;
+    border: 0;
+    box-shadow: none;
+    padding: 32px;    
+    border-radius: 16px;
+    text-align: center;
+}
+.tagline {
+    font-weight: 400;
+    font-size: 16px
+}
+
+.upload-btn,
+#start-btn{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    min-height: 48px;
+    padding: 12px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    cursor: pointer;
+
+    transition:
+        background-color 180ms ease, 
+        border-color 180ms ease,
+        transform 200ms ease,
+        box-shadow 180ms ease;
+}
+.upload-btn{
+    color:white;
+    background: rgba(255, 255, 255, 0.08);
+}
+.upload-btn:not(:disabled):hover{
+    background: rgba(255,255,255,0.25);
+    border-color: #ff8a3d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 138, 61, 0.2)
+}
+
+#start-btn{
+    color: #211108;
+    background: #ff8a3d;
+    border-color: #ff8a3d;
+}
+
+#start-btn:not(:disabled):hover {
+    background:#ffae70;
+    border-color: #ffae70;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(255, 138, 61, 0.2)
+}
+
+.upload-btn:disabled,
+#start-btn:disabled{
+    opacity: 0.25;
+    cursor: not-allowed;
+}
+
+
+@media (prefers-reduced-motion: reduce){
+    .upload-btn, #start-btn{
+        transition: none;
+    }
+    .upload-btn:not(:disabled):hover,
+    #start-btn:not(:disabled):hover{
+        transform:none
+    }
+}
+.hero-card h1{
+    font-family: 'Russo one', sans-serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 6vw, 5rem);
+    line-height: 1;
+}
+.hidden{opacity: 0; pointer-events: none;}
+
+
+#song-preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin:16px 0;
+}
+
+#hud{
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.player-panel{
+    width: min(760px, 100%);
+    box-sizing: border-box;
+    padding:18px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 138, 61, 0.3);
+
+    background: rgba(20, 12, 10, 0.75);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 12 px 40px rgba(0,0,0,0.3);
+
+    pointer-events: auto;
+}
+
+
+#hud.hidden .player-panel{
+    pointer-events: none;
+}
+
+.player-controls{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px
+}
+
+#seek{
+    flex: 1;
+    min-width: 100px;
+    accent-color: #ff8a3d;
+}
+ #volume{
+    width: 90px;
+    accent-color: #ff8a3d;
+ }
+
+ #now-playing{
+
+    margin: 12px 0 0;
+    font-size: 12px;
+    opacity: 0.7;
+ }
+
+ 
+ #bands{
+    margin: 12px 0 0;
+    font-size:12px;
+    opacity: 0.7;
+ }
+
+ #preview-duration,
+ #elapsed,
+ #remaining{
+    font-size: 14px;
+    font-variant-numeric: tabular-nums;
+ }
+
+ #preview-play,
+ #player-play{
+    font: inherit;
+    color: white;
+
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+
+    padding: 10px 16px;
+    cursor: pointer;
+
+    transition:
+    background-color 190ms ease,
+    border-color 180ms ease;
+ }
+
+ #preview-play:not(:disabled):hover,
+  #preview-play:not(:disabled):hover{
+
+    background: rgba(255,138, 61, 0.2);
+    border-color: #ff8a3d;
+  }
+
+
+  #preview-play:disabled,
+  #player-play:disabled{
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
