@@ -52,7 +52,7 @@ Everyone hears music, but.... this is a whole experience which allows us to *FEE
 ### ***Notes:***
 -The other (unmentioned) files in this readme.md are the ones which are either just supporting files for Three.js or are some test files which have unrelated content to the main project.
 
-- Majority of the project is made by me, by reading documentation and coding through understanding and some other forum researches (no plagiarism involved though), but only a teeny-tiny bit of AI was used which was only and ONLY when i was not able to get around some error or was not able to find some way to do the work through documentation. Hence, AI was only used as a last-resort rather than a full on helper.
+- AI was only used once and that too for an error which i was stuck on for really long time and couldn't find help through existing documentation or forums as much.
 
 - Most of the numeric values and the color themes involve a hit and try behind it which was done mostly externally on web-based tools and calculators available.
 
